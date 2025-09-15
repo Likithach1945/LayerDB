@@ -72,7 +72,7 @@ LayerDB demonstrates **orders-of-magnitude faster writes** compared to SQLite du
 but has **slower reads** because of SSTable lookups — a classic trade-off in LSM tree storage engines.
 
 ---
-## 📊 Benchmark Results
+## Benchmark Results
 
 ### Insert Operations
 
