@@ -1,41 +1,3 @@
-//package org.lsmdb.kvstore;
-//
-//import java.util.Map;
-//import java.util.TreeMap;
-//
-//public class MemTable {
-//
-//    private final TreeMap<String, String> map = new TreeMap<>();
-//    private int currentSize = 0;
-//
-//    public void put(String key, String value) {
-//        int delta = key.length() + (value != null ? value.length() : 0);
-//        if (map.containsKey(key)) {
-//            String oldValue = map.get(key);
-//            currentSize -= (key.length() + (oldValue != null ? oldValue.length() : 0));
-//        }
-//        map.put(key, value);
-//        currentSize += delta;
-//    }
-//
-//    public String get(String key) {
-//        return map.get(key);
-//    }
-//
-//    public int sizeInBytes() {
-//        return currentSize;
-//    }
-//
-//    public Map<String, String> dump() {
-//        return new TreeMap<>(map);
-//    }
-//
-//    public void clear() {
-//        map.clear();
-//        currentSize = 0;
-//    }
-//}
-
 
 package org.lsmdb.kvstore;
 
@@ -74,7 +36,7 @@ public class MemTable {
         map.put(key, value);
         currentSize += delta;
 
-        // Debug logging (optional)
+        // Debug logging
         // System.out.println("[MemTable] PUT key=" + key + ", size=" + formatSize(currentSize));
     }
 
