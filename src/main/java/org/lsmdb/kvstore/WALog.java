@@ -1,29 +1,3 @@
-//package org.lsmdb.kvstore;
-//
-//import java.io.FileWriter;
-//import java.io.IOException;
-//
-//public class WALog {
-//
-//    private FileWriter writer;
-//    private final String filePath;
-//
-//    public WALog(String path) throws IOException {
-//        this.filePath = path;
-//        writer = new FileWriter(path, true);
-//    }
-//
-//    public void append(String key, String value) throws IOException {
-//        writer.write(key + "=" + (value != null ? value : "null") + "\n");
-//        writer.flush();
-//    }
-//
-//
-//    public void clear() throws IOException {
-//        writer.close();
-//        writer = new FileWriter(filePath, false);
-//    }
-//}
 
 
 package org.lsmdb.kvstore;
